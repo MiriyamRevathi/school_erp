@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  school-erp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+      - "3900:3900"
+    environment:
+      - NODE_ENV=production
+      - PORT=3900
+      - NEXT_PUBLIC_API_URL=http://localhost:3900/api
+    restart: unless-stopped

@@ -1,0 +1,20 @@
+# Dependencies & build outputs
+node_modules/
+.next/
+dist/
+.turbo/
+build/
+*.log
+
+# Environment variables & secrets (STRICT NO COMMITS)
+.env
+.env.*
+*.env
+backend/.env*
+frontend/.env*
+
+# IDE & OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

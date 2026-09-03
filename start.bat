@@ -1,0 +1,3 @@
+@echo off
+echo Starting Greenfield International School ERP...
+npm run start
